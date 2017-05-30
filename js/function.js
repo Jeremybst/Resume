@@ -1,3 +1,4 @@
+/*Animation navbar scroll*/
 $(function() {
     var navigation = $(".navigation");
     var item = $(".item");
@@ -19,4 +20,10 @@ $(function() {
             item.removeClass("scrollitem");
         }
     });
+});
+
+/*loader page*/
+
+$(window).load(function() {
+  $(".se-pre-con").fadeOut("slow");;
 });
