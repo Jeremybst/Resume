@@ -1,3 +1,28 @@
+/*scrollTo*/
+
+$(document).ready( function () {
+   $('#a').click(function() {
+     $('html,body').animate({scrollTop: $("#aa").offset().top}, 'slow'      );
+   });
+})
+
+$(document).ready( function () {
+   $('#b').click(function() {
+     $('html,body').animate({scrollTop: $("#bb").offset().top}, 'slow'      );
+   });
+})
+
+$(document).ready( function () {
+   $('#c').click(function() {
+     $('html,body').animate({scrollTop: $("#cc").offset().top}, 'slow'      );
+   });
+})
+
+$(document).ready( function () {
+   $('#d').click(function() {
+     $('html,body').animate({scrollTop: $("#dd").offset().top}, 'slow'      );
+   });
+})
 /*Animation navbar scroll*/
 $(function() {
     var navigation = $(".navigation");
@@ -5,7 +30,7 @@ $(function() {
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= 550) {
+        if (scroll >= 80) {
             navigation.addClass("change");
         } else {
             navigation.removeClass("change");
@@ -14,7 +39,7 @@ $(function() {
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= 550) {
+        if (scroll >= 80) {
             item.addClass("scrollitem");
         } else {
             item.removeClass("scrollitem");
@@ -29,6 +54,30 @@ $(window).load(function() {
 });
 
 /*Animation FadeIn Scroll*/
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},500);
+
+            }
+
+        });
+
+    });
+
+});
 
 
 

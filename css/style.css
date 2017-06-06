@@ -62,21 +62,21 @@ html, body {
 
 .navigation {
   position: fixed;
-  height: 100px;
+  height: 75px;
   width: 100%;
   transition: all 0.4s;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .ulmenu {
-  font-size: 16px;
+  font-size: 0.9em;
   margin-left: 38%;
 }
 
 ul li {
   display: inline-block;
   text-align: center;
-  margin: 1.5em;
+  margin: 1em;
 }
 
 a {
@@ -169,7 +169,7 @@ h3 {
 .change {
     height: 75px;
     background-color: #FFFFFF;
-    transition: 0.5s;
+    /*transition: 0.5s;*/
     box-shadow: 0 7px 16px 0 rgba(50,50,50,.1);
     width: 100%;
     z-index: 1000;
@@ -177,14 +177,19 @@ h3 {
 
 .scrollitem {
   color: #2C3E50;
-  transition: 0.3s;
-  font-size: 0.9em;
+  /*transition: 0.3s;
+  font-size: 0.9em;*/
 }
 
 /*Main*/
 
 .main {
   margin-top: 100px;
+}
+
+.hideme
+{
+    opacity:0;
 }
 
 /**About**/
@@ -440,12 +445,45 @@ input:focus, textarea:focus {
   color: #109AF7;
 }
 
+.chevronup {
+  width: 45px;
+  height: 35px;
+  color: #FFFFFF;
+  margin-top: 97px;
+  border-bottom: none;
+}
+
 
 /*Footer*/
 
 .footer {
   background-color: #FFFFFF;
-  height: 100px;
+  height: 50px;
+}
+
+.footxt {
+  margin-top: 20px;
+}
+
+
+.footxt > i {
+  font-size: 1.5em;
+  color: #109AF7;
+  font-weight: 600;
+}
+
+.footxt > a {
+  color: black;
+  text-transform: none;
+  transition: 0.4s;
+}
+
+.footxt > a:hover {
+  color: #109AF7;
+}
+
+.footxt > i:nth-child(2n) {
+  color: #e74c3c;
 }
 
 
@@ -467,7 +505,11 @@ input:focus, textarea:focus {
   z-index:10;
 }
 
-#okCookie p{margin:0 0 10px 0; float:left; padding:5px 0px;}
+#okCookie p {
+  margin:0 0 10px 0;
+  float:left;
+  padding:5px 0px;
+}
 
 #okCookie #okClose, #okCookie #okCprivacy{
   padding:5px 20px;
@@ -513,4 +555,101 @@ input:focus, textarea:focus {
 @keyframes myfirst {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+/***Media queries***/
+
+
+@media (max-width: 360px) {
+  .icon-scroll, nav {
+    display: none;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .float, .timeline > li > .timeline-panel {
+    float: none;
+  }
+
+  .skill {
+    height: 1300px;
+  }
+
+  li {
+    display: none;
+  }
+
+  .timeline > li:not(.timeline-inverted),
+  .timeline > li.timeline-inverted
+   {
+    padding: 0;
+  }
+
+  .timeline {
+    position: inherit;
+  }
+
+  .timeline > li > .timeline-panel {
+    width: auto;
+  }
+
+  .timeline-badge,
+  .timeline > li > .timeline-panel::after,
+  .timeline > li > .timeline-panel::before,
+  .timeline::before
+  {
+    display: none;
+  }
+
+  form {
+    display: none;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .chevronup {
+    border-bottom: 2px solid #109AF7;
+  }
+}
+
+  @media (max-width: 980px) {
+
+    .ulmenu {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .icon-scroll {
+      margin-left: 50px;
+    }
+
+    .float {
+      float: none;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .skill {
+      height: 850px;
+    }
+
+    .contact {
+      text-align: center;
+      height: 930px;
+    }
+
+    .chevronup, .span3 {
+      margin-top: 20px;
+    }
+
+    .chevronup {
+      border-bottom: 2px solid #109AF7;
+    }
+
 }
