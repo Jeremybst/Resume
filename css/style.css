@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -62,10 +62,11 @@ html, body {
 
 .navigation {
   position: fixed;
-  height: 75px;
+  height: 55px;
   width: 100%;
   transition: all 0.4s;
-  z-index: 1;
+  z-index: 1000;
+  background-color: white;
 }
 
 .ulmenu {
@@ -77,24 +78,38 @@ ul li {
   display: inline-block;
   text-align: center;
   margin: 1em;
+  font-size: 13px;
 }
 
-a {
+.item, a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #333333;
 }
 
-a:hover {
+.item:hover, a:hover {
   color: #109AF7;
   transition: all 0.5s;
   text-decoration: none;
 }
 
+a {
+  color: white;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #109AF7;
+}
+
 h1 {
   margin-top: 300px;
   text-transform: uppercase;
+}
+
+h1 span {
+  color: #109AF7;
 }
 
 h2 {
@@ -126,7 +141,8 @@ h3 {
 
 .rs {
   color: #34495e;
-  font-size: 3em;
+  font-size: 2em;
+  margin: 1em;
 }
 
 /*scroll mouse*/
@@ -142,7 +158,7 @@ h3 {
   height: 70px;
   margin-left: 97px;
   top: 120%;
-  box-shadow: inset 0 0 0 1px #fff;
+  box-shadow: inset 0 0 0 3px #fff;
   border-radius: 25px;
 }
 
@@ -167,18 +183,12 @@ h3 {
 /***animation navbar scroll***/
 
 .change {
-    height: 75px;
+    height: 50px;
     background-color: #FFFFFF;
     /*transition: 0.5s;*/
     box-shadow: 0 7px 16px 0 rgba(50,50,50,.1);
     width: 100%;
     z-index: 1000;
-}
-
-.scrollitem {
-  color: #2C3E50;
-  /*transition: 0.3s;
-  font-size: 0.9em;*/
 }
 
 /*Main*/
@@ -441,10 +451,6 @@ input:focus, textarea:focus {
   margin-right: 15px;
 }
 
-.information:hover i {
-  color: #109AF7;
-}
-
 .chevronup {
   width: 45px;
   height: 35px;
@@ -560,61 +566,6 @@ input:focus, textarea:focus {
 /***Media queries***/
 
 
-@media (max-width: 360px) {
-  .icon-scroll, nav {
-    display: none;
-  }
-
-  .about {
-    text-align: center;
-  }
-
-  .float, .timeline > li > .timeline-panel {
-    float: none;
-  }
-
-  .skill {
-    height: 1300px;
-  }
-
-  li {
-    display: none;
-  }
-
-  .timeline > li:not(.timeline-inverted),
-  .timeline > li.timeline-inverted
-   {
-    padding: 0;
-  }
-
-  .timeline {
-    position: inherit;
-  }
-
-  .timeline > li > .timeline-panel {
-    width: auto;
-  }
-
-  .timeline-badge,
-  .timeline > li > .timeline-panel::after,
-  .timeline > li > .timeline-panel::before,
-  .timeline::before
-  {
-    display: none;
-  }
-
-  form {
-    display: none;
-  }
-
-  .contact {
-    text-align: center;
-  }
-
-  .chevronup {
-    border-bottom: 2px solid #109AF7;
-  }
-}
 
   @media (max-width: 980px) {
 
@@ -652,4 +603,118 @@ input:focus, textarea:focus {
       border-bottom: 2px solid #109AF7;
     }
 
+}
+
+
+@media (max-width: 321px) {
+  .icon-scroll, nav {
+    display: none;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .float, .timeline > li > .timeline-panel {
+    float: none;
+  }
+
+  .skill {
+    height: 1600px;
+  }
+
+  li {
+    display: none;
+  }
+
+  .timeline > li:not(.timeline-inverted),
+  .timeline > li.timeline-inverted
+  {
+    padding: 0;
+  }
+
+  .timeline {
+    position: inherit;
+  }
+
+  .timeline > li > .timeline-panel {
+    width: auto;
+  }
+
+  .timeline-badge,
+  .timeline > li > .timeline-panel::after,
+  .timeline > li > .timeline-panel::before,
+  .timeline::before
+  {
+    display: none;
+  }
+
+  form {
+    display: none;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .chevronup {
+    border-bottom: 2px solid #109AF7;
+  }
+}
+
+@media (max-width: 361px) {
+  .icon-scroll, nav {
+    display: none;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .float, .timeline > li > .timeline-panel {
+    float: none;
+  }
+
+  .skill {
+    height: 1300px;
+  }
+
+  li {
+    display: none;
+  }
+
+  .timeline > li:not(.timeline-inverted),
+  .timeline > li.timeline-inverted
+  {
+    padding: 0;
+  }
+
+  .timeline {
+    position: inherit;
+  }
+
+  .timeline > li > .timeline-panel {
+    width: auto;
+  }
+
+  .timeline-badge,
+  .timeline > li > .timeline-panel::after,
+  .timeline > li > .timeline-panel::before,
+  .timeline::before
+  {
+    display: none;
+  }
+
+  form {
+    display: none;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .chevronup {
+    border-bottom: 2px solid #109AF7;
+    margin-top: 50px;
+  }
 }
