@@ -1,0 +1,74 @@
+/**Portfolio**/
+
+/*About*/
+
+
+img {
+  border: none;
+  width: 25em;
+}
+
+/*portfolio main*/
+
+/* STYLE THE THUMBNAIL CONTAINER (FOR POSITIONING, ETC OF THE THUMBNAIL) */
+.Effect_Container {
+  float: left;
+  margin: 20px 0px 0px 100px;
+  width: 400px;
+  height: 180px;
+  margin-left: 10%;
+}
+/* CAPTION BACKGROUNDS STYLING */
+.captionBackground2 {
+  width:100%;
+  height:60px;
+  background: #109AF7;
+  transition: 0.6s;
+}
+.captionText {
+  color:##FFFFFF;
+  line-height:45px;
+  font-size:20px;
+  text-align:center;
+}
+
+.captionss {
+  background-color: #F4F4F4;
+  height: 800px;
+}
+
+.captionBackground2:hover {
+  color: black;
+  border: 1px solid #37ABF8;
+}
+
+.HoverAlls_Caption:hover {
+  box-shadow: 0 7px 16px 0 rgba(50,50,50,.1);
+  transition: 0.6s;
+}
+
+.about a {
+  color: black;
+  transition: all 0.6s;
+  font-size: 2.5em;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.about a:hover {
+  color: #109AF7;
+}
+
+
+
+
+
+
+
+/***Media queries***/
+
+@media (max-width: 361px) {
+  .about img {
+    width: 15em;
+  }
+}
