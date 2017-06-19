@@ -457,6 +457,10 @@ padding-left:90px;
   background-size: cover;
 }
 
+.contactext {
+  font-size: 0.8em;
+}
+
 .overlay2 {
   background-color: rgba(0,0,0,.9);
   color: #FFFFFF;
@@ -475,7 +479,7 @@ padding-left:90px;
   width: 45px;
   height: 35px;
   color: #FFFFFF;
-  margin-top: 97px;
+  margin-top: 10px;
   border-bottom: none;
 }
 
@@ -514,6 +518,12 @@ padding-left:90px;
 
 .footxt > i:nth-child(2n) {
   color: #e74c3c;
+}
+
+/***Valid***/
+
+h1 .fa .ivalid {
+  font-size: 4em;
 }
 
 

@@ -77,7 +77,7 @@
               Padawan dev & intégrateur web
             </p>
             <p>
-              e m'appelle Jérémy Bustin j'ai 22 ans. Je me situe dans le nord de la France (Valenciennes).
+              Je m'appelle Jérémy Bustin j'ai 22 ans. Je me situe dans le nord de la France (Valenciennes).
        Je suis passionné par le monde informatique, jeux-vidéo et la lecture.
         En juin 2016 j'ai intégré une formation pour devenir dev et intégrateur web et mobile
       à la <a class="black" href="http://pop.eu.com/popschool/">Popschool</a>.On a appris différents languages (HTML/CSS/PHP), l'utilisation de base de
@@ -248,14 +248,19 @@
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12 col-md-6">
           <div class="col-md-12">
-            <form>
+            <p class="contactext">
+              Vous avez un projet ? Vous souhaitez faire une refonte de votre site ?
+              Ou vous voulez tout simplement me laisser un petit mot ? N'hésitez pas !
+            </p>
+            <form action="fonctions/contact.php" method="POST">
+              <input type="hidden" name="subject" value="formmail">
               <input id="name" name="name" type="text" class="span3" placeholder=" Nom" required>
               <input id="email" name="email" type="email" class="span3" placeholder=" Adresse email" required>
               <div class="controls">
                 <textarea id="message" name="message" class="span6" placeholder=" Votre message" rows="5" required></textarea>
               </div>
               <div class="controls">
-                <button id="contact-submit" type="submit">Send</button>
+                <button id="contact-submit" type="submit">Envoyer</button>
               </div>
             </form>
           </div>
