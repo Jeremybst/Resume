@@ -31,7 +31,7 @@ h2 {
   text-transform: uppercase;
   border-top: 4px solid #000000;
   border-bottom: 4px solid #109AF7;
-  width: 110px;
+  width: 280px;
   font-size: 22x;
   margin-bottom: 80px;
 }
@@ -285,6 +285,10 @@ ul li {
   font-size: 5em;
 }
 
+.hskill {
+  width: 230px;
+}
+
 /**Portfolio**/
 
 .portfolio {
@@ -296,8 +300,8 @@ ul li {
 }
 
 .titleportfolio {
-  border: none;
-  font-weight: 700;
+  /*font-weight: 700;*/
+  width: 300px;
 }
 
 
@@ -473,6 +477,10 @@ padding-left:90px;
   color: #FFFFFF;
   margin-top: 97px;
   border-bottom: none;
+}
+
+.hcontact {
+  width: 180px;
 }
 
 
