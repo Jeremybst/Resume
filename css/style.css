@@ -23,7 +23,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h1 span {
+h1 span, .contact span {
   color: #109AF7;
 }
 
@@ -707,6 +707,10 @@ h1 .fa .ivalid {
     margin-top: 50px;
   }
 
+  .contactext {
+    margin-top: 15px;
+  }
+
 
 @media (max-width: 321px) {
   .icon-scroll, nav {
@@ -722,7 +726,7 @@ h1 .fa .ivalid {
   }
 
   .skill {
-    height: 1600px;
+    height: 1300px;
   }
 
   li {

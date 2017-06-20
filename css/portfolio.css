@@ -99,9 +99,50 @@ img {
 
 
 /***Media queries***/
+@media (max-width: 415px) {
+ .icon-scroll {
+    display: none;
+  }
 
-@media (max-width: 361px) {
+  .captionss {
+    height: 1100px;
+  }
+
+  .Effect_Container {
+    margin-left: 0;
+    width: 415px;
+  }
+}
+
+@media (max-width: 380px) {
   .about img {
     width: 15em;
   }
+
+  .hmain {
+    width: 300px;
+  }
+
+  .Effect_Container {
+    margin-left: 0;
+    width: 380px;
+  }
+
+  .footer, .icon-scroll, .navigation {
+    display: none;
+  }
+
+}
+
+@media (max-width: 325px) {
+  .Effect_Container {
+    margin-left: 0;
+    width: 325px;
+  }
+
+  .hlanguages {
+    width: 260px;
+  }
+
+
 }
