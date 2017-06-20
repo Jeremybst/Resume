@@ -645,13 +645,26 @@ h1 .fa .ivalid {
       margin-top: 20px;
     }
 
-    .chevronup {
-      border-bottom: 2px solid #109AF7;
-    }
-
 }
 
-@media (max-width: 361px) {
+@media (max-width: 780px) {
+  .contact {
+    height: 980px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill {
+    height: 1050px;
+  }
+
+  .contact {
+    height: 1000px;
+  }
+}
+
+
+@media (max-width: 415px) {
   .icon-scroll, nav {
     display: none;
   }
@@ -703,7 +716,6 @@ h1 .fa .ivalid {
   }
 
   .chevronup {
-    border-bottom: 2px solid #109AF7;
     margin-top: 50px;
   }
 
@@ -761,9 +773,5 @@ h1 .fa .ivalid {
 
   .contact {
     text-align: center;
-  }
-
-  .chevronup {
-    border-bottom: 2px solid #109AF7;
   }
 }
