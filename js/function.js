@@ -1,3 +1,5 @@
+/**Local Scroll**/
+
 (function() {
 
      'use strict';
@@ -96,7 +98,7 @@ $(function() {
 
 
 
-/*loader page*/
+/**Loader page**/
 
 $(window).load(function() {
   $(".se-pre-con").fadeOut("slow");;

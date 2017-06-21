@@ -28,7 +28,7 @@ img {
   width: 340px;
 }
 
-/* STYLE THE THUMBNAIL CONTAINER (FOR POSITIONING, ETC OF THE THUMBNAIL) */
+/* Thumbnail */
 .Effect_Container {
   float: left;
   margin: 20px 0px 0px 100px;
@@ -37,7 +37,7 @@ img {
   margin-left: 10%;
   margin-top: 15px;
 }
-/* CAPTION BACKGROUNDS STYLING */
+/* Caption backgrounds */
 .captionBackground2 {
   width:100%;
   height:60px;

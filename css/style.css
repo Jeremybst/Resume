@@ -306,7 +306,7 @@ ul li {
 }
 
 
-/*****Timeline*****/
+/**Timeline**/
 
 .timeline {
   list-style: none;
@@ -449,7 +449,7 @@ padding-left:90px;
   border: 1px solid #109AF7;
 }
 
-/*****Contact*****/
+/**Contact**/
 
 .contact {
   background-image: url(../img/bg-contact.jpg);
@@ -489,7 +489,7 @@ padding-left:90px;
 }
 
 
-/*****Footer*****/
+/**Footer**/
 
 .footer {
   background-color: #FFFFFF;
@@ -521,14 +521,14 @@ padding-left:90px;
   color: #e74c3c;
 }
 
-/***Valid***/
+/***Validhtml***/
 
 h1 .fa .ivalid {
   font-size: 4em;
 }
 
 
-/***Cookies***/
+/**Cookies**/
 
 #okCookie{
   background-color: #FFFFFF;
